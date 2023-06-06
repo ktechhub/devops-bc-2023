@@ -1,12 +1,29 @@
 # Syntax
 
+## Resource sources
+-- "resource": We're creating a new resource
+-- "data": We're calling an existing resource
+
 ```sh
 resource "provider_type" "resource_name" {
     arg1 = "value1"
 }
 ```
 
+## Standard naming convention in Terraform
+```sh
+main.tf -- Contains your actual resources
+variables.tf -- Holds names of items you want to call in your main.tf
+data.tf -- Contains data sources which already exist
+providers.tf -- Where you are calling the resources from, eg; AWS, GCP, Azure, Hashicorp, Alibaba cloud, Digitalocean
+
+outputs.tf -- Visualize the new resources that are created
+versions.tf -- HOlds the different versions of the providers
+```
+
 2. `variables` -- use the `variables.tf` to pass arguments to resource blocks 
+
+bool item;      // true or false
 
 - variable blocks take 3 arguments
 
