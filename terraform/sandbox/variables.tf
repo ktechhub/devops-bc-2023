@@ -13,9 +13,3 @@ variable "file-content" {
     "statement2" = "my pet 2"
   }
 }
-
-
-variable "food" {
-    default = [ "chicken", "fish" ]      # WRONG! fish can't appear twice
-    type = set(string)
-}
