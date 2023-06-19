@@ -1,6 +1,4 @@
-# Assignment 1: Terraform
-
-## 1.
+## Assignment 1: Terraform
 
 ```sh
 - Create a local file and name it rambox.txt
