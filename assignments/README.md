@@ -20,5 +20,11 @@
 
 ## Assignment 3. Kubernetes
 ```sh
+- Create a kubernetes deployment using the nginx image "my-nginx-image:0.0.4"
 
+- Use the "Declarative" yaml manifests to deploy the app using "deployment" object
+
+- Use "declarative" yaml manifests to create a "service" object with with port 6000 and service type ClusterIP
+
+- Port-forward the service on your local machine from the service object (NB: Not the pod object)
 ```
