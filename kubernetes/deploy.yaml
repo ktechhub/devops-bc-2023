@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sly-dep
+  name: sly-dep
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sly-dep
+  template:
+    metadata:
+      labels:
+        app: sly-dep
+    spec:
+      containers:
+      - image: sly-nginx:0.0.1
+        name: sly-nginx
+        ports:
+        - containerPort: 80
