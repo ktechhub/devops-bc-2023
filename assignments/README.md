@@ -28,3 +28,34 @@
 
 - Port-forward the service on your local machine from the service object (NB: Not the pod object)
 ```
+
+## Assigment 4. Terraform Deploy EKS cluster
+```sh
+- Read about the "kubeadm" tool and how it's used to bootstrap(create) a k8s cluster
+
+- Spin up this eks cluster from the official terrafor-eks-module in "terraform-eks/" directory
+
+- Run:
+terraform init
+terraform plan
+terraform apply -auto-approve
+```
+
+## Project Work
+```sh
+- Create 2 repositories : One for the eks infra and the other for sly-app
+
+- In the eks infra repo, do the following:
+
+- Create a Github actions pipeline with the following steps
+
+- The root branch contains the eks terraform scripts
+
+- Deploy the terraform eks on push
+
+- On the second repo, deploy the sly-nginx app to the cluster on push to the main branch
+
+- Take note: Push the sly-nginx image to dockerhub(public) with a tag, and pull it into the cluster as a
+deployment using a declarative approach
+
+```

@@ -20,3 +20,16 @@ kubectl create deployment sly-dep --image=sly-nginx:0.0.1 --replicas=2 --port=80
 # Deploy
 kubectl apply -f deploy.yaml
 ```
+
+## Scalers
+```sh
+server1
+server2------> 3-node cluster
+server3
+server4 <------ karpenter / clusterautoscaler
+
+pods -- 10000s
+pod1
+pod2 
+pod3 <---- k8s hpa (horizontal pod autoscaler) -- 2 min and 10 max, utilization , cpu reaches 80%
+```
